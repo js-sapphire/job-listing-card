@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Job Listings</title>
+
+  
+  <style>
+
+    html, body{
+      height:100%;
+      width:100%;
+      margin: 0;
+      background-color: hsl(180, 52%, 96%);
+      font-family: 'Spartan', sans-serif;
+      font-size: 15px;
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    .cardParent{
+    }
+
+    .card{
+      display: grid;
+      grid-template-columns: 1fr auto;
+      border-radius: 3px;
+      background-color: white;
+    }
+
+    .centerMe{
+     display: grid;
+     place-items: center;  
+    }
+
+    .details{
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      padding-left: 1rem;
+    }
+    
+    .container{
+      width: 80%;
+      margin: 100px auto 0px auto;
+    }
+
+    .circle{
+      border-radius: 50%;
+    }
+
+    .leftSectionFeatured{
+      border-left: solid 4px hsl(180, 29%, 50%);
+    }
+    
+    .left{
+      display: flex;
+      padding: 1.5rem 0rem 1.5rem 1.5rem;
+    }
+
+    .right{
+      padding: 1.5rem;
+    }
+
+    .littlePadding{
+      padding: 0.5rem;
+    }
+
+    .tagSpan{
+      padding: 5px;
+      border-radius: 2px;
+      background-color: hsl(180, 52%, 96%);
+      margin: 5px;
+      color: hsl(180, 29%, 50%)
+    }
+
+    .positionSpan{
+      font-weight: 700;
+      padding-top: 5px;
+    }
+
+    .detailsUpper{
+      font-weight: 700;
+      font-size: 12px;
+    }
+
+    .companySpan{
+      color: hsl(180, 29%, 50%)
+    }
+
+    .newSpan{
+      padding: 6px;
+      border-radius: 12px;
+      background-color: hsl(180, 29%, 50%);
+      color: white;
+    }
+
+    .featuredSpan{
+      background-color: black;
+    }
+
+    .detailsLower{
+      height: 20px; 
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 500;
+      font-size: 12px;
+      color: hsl(180, 8%, 52%)
+    }
+
+    .delimeter{
+      font-weight: 700;
+      align-self: baseline
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+
+
+    <div class="cardParent">
+      <div class="card leftSectionFeatured">
+        <div class="left">
+          
+          <div class="centerMe littlePadding">
+            <div class="circle">
+              <img src="./images/manage.svg">
+            </div>
+          </div>
+        <div class="details">
+          <div class="detailsUpper">
+            <span class="companySpan">Manage</span>
+            <span class="newSpan">NEW!</span>
+            <span class="newSpan featuredSpan">FEATURED</span>
+          </div>
+          <span class="positionSpan">Fullstack Developer</span>
+          <div class="detailsLower">
+            <span class="">1d ago</span>
+            <span class="delimeter">.</span>
+            <span class="">Full time</span>
+            <span class="delimeter">.</span>
+            <span class="">USA only</span>
+          </div>
+        </div>
+
+      </div>
+
+        <div class="right centerMe">
+          <div class="tags">
+            <span class="tagSpan">Frontend</span>
+            <span class="tagSpan">Senior</span>
+            <span class="tagSpan">HTML</span>
+            <span class="tagSpan">CSS</span>
+            <span class="tagSpan">Javascript</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
